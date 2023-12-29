@@ -2,7 +2,7 @@ from Kidney_Disease_Classification import logger
 from Kidney_Disease_Classification.config.configuration import ConfigurationManager
 from Kidney_Disease_Classification.components.data_ingestion import DataIngestion
 
-STAGE_NAME = "Data Ingestion stage"
+STAGE_NAME = "Data Ingestion"
 
 class DataIngestionTrainingPipeline:
     def __init__(self) -> None:
