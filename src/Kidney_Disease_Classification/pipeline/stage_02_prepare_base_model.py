@@ -1,6 +1,6 @@
 from Kidney_Disease_Classification import logger
 from Kidney_Disease_Classification.config.configuration import ConfigurationManager
-from Kidney_Disease_Classification.components.prepare_base_model import PrepareBaseMode
+from Kidney_Disease_Classification.components.prepare_base_model import PrepareBaseModel
 
 
 STAGE_NAME = "Prepare base model"
@@ -14,7 +14,7 @@ class PrepareBaseModeTrainingPipeline:
     def main(self):
         config = ConfigurationManager()
         prepare_base_model_config = config.get_prepare_base_model_config()
-        prepare_base_model = PrepareBaseMode(config=prepare_base_model_config)
+        prepare_base_model = PrepareBaseModel(config=prepare_base_model_config)
         prepare_base_model.get_base_model()
         prepare_base_model.update_base_model()
 

@@ -6,7 +6,7 @@ from pathlib import Path
 from Kidney_Disease_Classification.entity.config_entity import PrepareBaseModelConfig
 
 
-class PrepareBaseMode:
+class PrepareBaseModel:
     def __init__(self, config: PrepareBaseModelConfig):
         self.config = config
     
