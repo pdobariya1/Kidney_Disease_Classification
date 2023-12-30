@@ -1,7 +1,4 @@
-import os
 import tensorflow as tf
-from urllib.request import Request
-from zipfile import ZipFile
 from pathlib import Path
 from Kidney_Disease_Classification.entity.config_entity import PrepareBaseModelConfig
 
