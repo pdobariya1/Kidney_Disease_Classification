@@ -69,16 +69,13 @@ class Training:
         self.steps_per_epoch = self.train_generator.samples // self.train_generator.batch_size
         self.validation_steps = self.train_generator.samples // self.train_generator.batch_size
         
-        if not os.path.exists(self.config.trained_model_path):
-            self.model.fit(
-                self.train_generator,
-                epochs = self.config.params_epochs,
-                steps_per_epoch = self.steps_per_epoch,
-                validation_steps = self.validation_steps,
-                validation_data = self.valid_generator,
-            )
-        else:
-            pass
+        self.model.fit(
+            self.train_generator,
+            epochs = self.config.params_epochs,
+            steps_per_epoch = self.steps_per_epoch,
+            validation_steps = self.validation_steps,
+            validation_data = self.valid_generator,
+        )
         
         self.save_model(
             path=self.config.trained_model_path,
