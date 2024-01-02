@@ -42,6 +42,14 @@ pip install -r requirements.txt
 python app.py
 ```
 
+### MLFlow
+- [Documentation](https://mlflow.org/docs/latest/index.html)
+
+### DVC
+- dvc init
+- dvc repro
+- dvc dag
+
 Now,
 ```bash
 open up you local host and port
