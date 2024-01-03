@@ -163,7 +163,3 @@ cython_debug/
 logs/
 
 artifacts/*
-
-# dvc file
-.dvc
-dvc.lock
